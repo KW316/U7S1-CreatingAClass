@@ -12,4 +12,9 @@ public class Person {
     public String tellJoke(){
         return "What has two thumbs and writes bad code? .... " + name +"!";
     }
+
+    public static void main(String[] args) {
+        Person a = new Person();
+        System.out.println(a.greet("Kianna"));
+    }
 }

@@ -18,11 +18,21 @@ public class AlgoChallenge {
      */
 
     public static Boolean oneTeen(int person1, int person2) {
-
-        return null;
+            if( person1 > 19 || person2 > 19){
+                return true;
+            }
+        return false;
     }
 
+    public static void main(String[] args) {
+        System.out.println(oneTeen(13, 99));
+        System.out.println(oneTeen(21, 19));
+        System.out.println(oneTeen(13, 13));
+        System.out.println(beginWithOz("ozymandias"));
+        System.out.println( beginWithOz("bzoo"));
+        System.out.println(beginWithOz("oxx"));
 
+    }
     /* Problem 2
     We're on the look-out for ounces "oz" within a string. You will be given a string,
     and you need to determine if the first two characters yields "oz".
@@ -37,8 +47,16 @@ public class AlgoChallenge {
      */
 
     public static String beginWithOz(String ounces) {
+        String str = ounces.substring(0,2);
+        if(str.equals("oz")){
+            return "oz";
+        }else if(str.indexOf("o") == 0){
+            return "o";
+        }else if(str.indexOf("z") == 1){
+            return "z";
+        }
 
-        return null;
+        return " ";
     }
 
 }

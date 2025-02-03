@@ -18,4 +18,14 @@ public class AnimalFactory {
         Integer newId = CatHouse.getNumberOfCats();
         return new Cat(name, birthDate, newId);
     }
+
+    public static void main(String[] args) {
+        Date a = new Date();
+        Cat cat = createCat("Willow", a);
+        System.out.println(cat.getName());
+        System.out.println(cat.getBirthDate());
+        Dog dog = createDog("Willow", a);
+        System.out.println(dog.getName());
+        System.out.println(dog.getBirthDate());
+    }
 }

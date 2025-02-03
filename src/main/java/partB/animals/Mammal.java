@@ -19,6 +19,14 @@ public abstract class Mammal extends Animal {
         this.eatenMeals = new ArrayList<>();
         this.id = id;
     }
+    public Mammal(String name, Integer id) {
+        this.name = name;
+
+        this.eatenMeals = new ArrayList<>();
+        this.id = id;
+    }
+
+
 
     public String getName() {
         return name;
